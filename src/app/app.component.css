@@ -1,0 +1,10 @@
+.topo{
+    background-color: #0a2a4a;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.topo .titulo{
+    color: #ffffff;
+    font-size: 18px;
+}

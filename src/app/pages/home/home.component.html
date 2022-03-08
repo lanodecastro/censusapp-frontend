@@ -1,0 +1,60 @@
+<div class="d-flex mt-3">
+    <div class="col-3 d-flex flex-column">
+        <div class="contador">
+            <h1>
+                <ng-container *ngIf="response$ | async as data">
+                    {{data.total}}
+                </ng-container>
+            </h1>
+            <span>
+                Total
+            </span>
+        </div>
+        <div class="card-pessoa mt-3">
+            <div class="mb-3 text-center mt-3">
+                <i class="icofont-ui-user"></i>
+            </div>
+            <ng-container *ngIf="pessoa">
+                <div class="text-center mt-4">
+                    <p><strong>{{pessoa.nome}} {{pessoa.sobrenome}}</strong></p>
+                    <p>Escolaridade: {{pessoa.escolaridade}}</p>
+                    <p>Raça/Cor: {{pessoa.racaCor}}</p>
+                    <p>Região: {{pessoa.regiao}}</p>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="grupo regiao">
+            <h1>Região</h1>
+            <ng-container *ngIf="response$ | async as data">
+                <div *ngFor="let item of  data.regiao" class="item-grupo d-flex justify-content-between">
+                    <div>{{item.label}}</div>
+                    <div>{{item.value}}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="grupo escolaridade">
+            <h1>Escolaridade</h1>
+            <ng-container *ngIf="response$ | async as data">
+                <div *ngFor="let item of  data.escolaridade" class="item-grupo d-flex justify-content-between">
+                    <div>{{item.label}}</div>
+                    <div>{{item.value}}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="grupo racaCor">
+            <h1>Raça/Cor</h1>
+            <ng-container *ngIf="response$ | async as data">
+                <div *ngFor="let item of  data.racaCor" class="item-grupo d-flex justify-content-between">
+                    <div>{{item.label}}</div>
+                    <div>{{item.value}}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

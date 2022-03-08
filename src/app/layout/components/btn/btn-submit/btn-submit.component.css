@@ -1,0 +1,14 @@
+.btn-nav{
+    background-color: gray;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 14px;
+    font-size: small;   
+}
+.btn-nav i{
+   
+}
+.btn-nav .separator{
+    height: 100%;
+    margin-right: 5px;
+}

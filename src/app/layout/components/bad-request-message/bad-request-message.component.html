@@ -1,0 +1,7 @@
+<div *ngIf="badRequest && exceptionType==badRequest.exceptionType">
+    <ul>
+        <li *ngFor="let notification of badRequest.notifications">
+            {{notification.Message}}
+        </li>
+    </ul>
+</div>

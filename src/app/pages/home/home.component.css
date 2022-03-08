@@ -1,0 +1,52 @@
+.contador{
+    background-color: rgb(63, 201, 21);
+    color: #ffffff;   
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 30%;
+}
+.contador h1{
+   margin: 0;
+}
+.grupo{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    min-height: 70vh;
+    color: #ffffff;
+}
+.grupo h1{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff
+}
+.item-grupo{
+    padding: 10px;
+}
+.regiao{
+    background-color: rgb(173, 24, 154);
+}
+.escolaridade{
+    background-color: blueviolet;
+}
+.racaCor{
+    background-color: rgb(102, 19, 158);
+}
+.card-pessoa{
+    background-color: rgb(35, 90, 173);
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+    
+}
+.card-pessoa i{
+    color: #ffffff;
+    font-size: 50px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    padding: 15px;
+}
+.card-pessoa p{
+    color: #ffffff;
+}
